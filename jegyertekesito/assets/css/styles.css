@@ -1,0 +1,362 @@
+.rendezveny-oldal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.success, .error, .ures-kosar, .ures {
+    display: block;
+    background: #2ecc71;
+    color: #fff;
+    padding: 18px 24px;
+    border-radius: 7px;
+    text-align: center;
+    margin: 28px auto 18px auto;
+    max-width: 500px;
+    font-size: 1.15em;
+    box-shadow: 0 2px 8px rgba(46,204,113,0.08);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f7f6;
+    color: #222;
+    min-height: 100vh;
+}
+
+nav {
+    background: #34495e;
+    padding: 16px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.13);
+}
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 22px;
+    margin: 0 6px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.2s;
+    display: inline-block;
+}
+nav a:hover {
+    background: #2c3e50;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.container, .profil-container, .add-ticket-container, .kosar-lista {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    padding: 35px 40px;
+}
+
+form {
+    background: #fff;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+form label {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 6px;
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="number"],
+form input[type="datetime-local"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+form textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+form button,
+form input[type="submit"] {
+    background: #3498db;
+    color: #fff;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+form button:hover,
+form input[type="submit"]:hover {
+    background: #2980b9;
+}
+
+.rendezveny {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 28px auto;
+    padding: 24px;
+    max-width: 800px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.rendezveny img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 7px;
+    margin-bottom: 18px;
+}
+.rendezveny h2 {
+    margin-top: 0;
+    color: #34495e;
+}
+.rendezveny p {
+    color: #666;
+}
+.rendezveny a {
+    background: #2ecc71;
+    color: #fff;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.2s;
+    margin-top: 10px;
+    display: inline-block;
+}
+.rendezveny a:hover {
+    background: #27ae60;
+}
+
+.jegy {
+    background: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    padding: 18px 28px;
+    margin: 16px auto;
+    max-width: 700px;
+    min-width: 320px;
+    box-sizing: border-box;
+}
+.jegy h3, .jegy p, .jegy a, .jegy .elfogyott {
+    text-align: center;
+}
+
+ul, .rendezveny-lista, .jegy-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    max-width: 500px;
+}
+ul li, .rendezveny-lista li, .jegy-lista li {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+ul li:last-child, .rendezveny-lista li:last-child, .jegy-lista li:last-child {
+    border-bottom: none;
+}
+
+
+.success, .error, .ures-kosar, .ures {
+    background: #2ecc71;
+    color: #fff;
+    padding: 18px 24px;
+    border-radius: 7px;
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    font-size: 1.15em;
+    box-shadow: 0 2px 8px rgba(46,204,113,0.08);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+.error {
+    background: #e74c3c;
+    box-shadow: 0 2px 8px rgba(231,76,60,0.08);
+}
+.ures-kosar, .ures {
+    background: #f8d7da;
+    color: #a94442;
+    border: 1px solid #f5c6cb;
+    box-shadow: 0 2px 8px rgba(231,76,60,0.04);
+    font-size: 1.08em;
+}
+
+.rendezveny img, .rendezveny-oldal img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(44,73,94,0.10);
+    object-fit: cover;
+    background: #eee;
+    display: block;
+}
+
+.kosar-lista {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: 30px auto 20px auto;
+    padding: 25px 30px;
+}
+.kosar-lista h2 {
+    color: #2c3e50;
+    margin-bottom: 18px;
+}
+.kosar-lista ul {
+    background: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+.kosar-lista li {
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+    color: #555;
+    font-size: 1.08em;
+}
+.kosar-lista li:last-child {
+    border-bottom: none;
+}
+
+.kosarba-btn, .profil-container button, .add-ticket-container button {
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+.kosarba-btn:hover, .profil-container button:hover, .add-ticket-container button:hover {
+    background: #e67e22;
+    transform: translateY(-2px);
+}
+
+.elfogyott {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.05em;
+    margin-left: 8px;
+}
+.ures-kosar {
+    background: #f8d7da;
+    color: #a94442;
+    border: 1px solid #f5c6cb;
+    box-shadow: 0 2px 8px rgba(231,76,60,0.04);
+    font-size: 1.18em;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    text-align: center;
+    padding: 22px 32px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.ures {
+    background: #f8d7da;
+    color: #a94442;
+    border: 1px solid #f5c6cb;
+    box-shadow: 0 2px 8px rgba(231,76,60,0.04);
+    font-size: 1.08em;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+    margin-bottom: 18px;
+    text-align: center;
+    padding: 16px 20px;
+    border-radius: 7px;
+    font-weight: 500;
+}
+
+footer {
+    background: #34495e;
+    color: #ecf0f1;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.13);
+}
+footer div {
+    max-width: 800px;
+    margin: 0 auto;
+}
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+footer a {
+    color: #1abc9c;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+footer a:hover {
+    color: #16a085;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 5px auto;
+        width: 90%;
+    }
+    .rendezveny, .container, .profil-container, .add-ticket-container, .kosar-lista {
+        margin: 15px;
+        padding: 15px;
+    }
+    form {
+        margin: 20px;
+        padding: 20px;
+    }
+}
